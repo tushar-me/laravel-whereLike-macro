@@ -1,4 +1,6 @@
-```
+`AppServiceProvider.php`
+
+```ruby
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
@@ -28,9 +30,14 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 
-##Example Usage:
-```
+
+## Example Usage:
+
+`PostController.php`
+
+```ruby
   use App\Models\Post;
+
   $posts = Post::query()
       ->whereLike([
           'title',                       
